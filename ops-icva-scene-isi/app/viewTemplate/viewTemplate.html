@@ -1,0 +1,37 @@
+<div class="hotspot_container" ng-repeat="hotspot in hotspots">
+    <a style="{{hotspot.style}}" ng-mobile-click="onTap(hotspot.tap, 'tap')" hm-tap="" hm-swipeleft="onSwipe(hotspot.swipeleft, 'swipeleft')" hm-swiperight="onSwipe(hotspot.swiperight, 'swiperight')">&nbsp;</a><br/>
+</div>
+
+<img class="view_image" ng-src="{{backgroundImage}}"/>
+
+<div id="aside-isi-wrapper" ng-show="!fullisi_visible">
+	<div id="scroller">
+		<ul>
+			<li><img src="assets/images/ISI1.png" width="280" height="2601"/></li>
+		</ul>
+	</div>
+</div> 
+
+
+<div id="full-isi-wrapper" ng-show="fullisi_visible" hm-swipeleft="onSwipe('gotoslide:ops-icva-summary.zip', 'swipeleft')" hm-swiperight="onSwipe('gotoslide:ops-icva-baseline-characteristics.zip', 'swiperight')">
+	<div id="scroller">
+		<ul>
+			<li><img src="assets/images/ACTOP17210_Opsumit_POA_Threat_Module_ISI.png" width="1024" height="1778"/></li>
+            <li><img src="assets/images/tap_here_PI.png" ng-mobile-click="onTap('gotoslide:ops-icva-pdf-prescribing-information.zip', 'tap')" width="1024" height="23"/></li>
+		</ul>
+	</div>
+</div> 
+
+
+<img id="isi_more_wide" src="assets/images/isi_scroll_for_more_wide.png" ng-show="fullisi_visible"/>
+
+	
+<script>
+
+    $("html").on("touchstart", function() {
+        $("#isi_more_wide").hide();
+    });     
+
+</script>
+
+	

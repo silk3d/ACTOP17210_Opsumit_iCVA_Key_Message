@@ -1,0 +1,68 @@
+<!doctype html>
+<!-- Our uiRouterSample module defined here -->
+<html lang="en" ng-app="TouchPanelPresenter" ng-controller="MainCtrl">
+  <head>
+
+    <meta charset="utf-8">
+      <meta name="fragment" content="!">
+      <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0'>
+      <meta name="format-detection" content="telephone=no" />
+      <!-- Try to achieve full screen mode -->
+      <meta name="apple-mobile-web-app-capable" content="yes">
+
+
+<!-- styles for ng-animate are located here -->
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/main.css"/> 
+<link rel="stylesheet" type="text/css" href="css/scrollbar.css"/>  
+
+
+  </head>
+  <body>    
+      
+<img id="app-background-image" src="assets/images/background_high_res.png" width="1024" height="768"/>
+
+      <img id="scroll-for-more" src="assets/images/scroll_for_more.png" style=""/>
+
+      
+    <div id="presentation" style="height:768px; overflow:hidden;">
+        <!-- Here is the main ui-view (unnamed) and will be populated by its immediate children's templates
+         unless otherwise explicitly named views are targeted. It's also employing ng-animate. -->
+        <div ui-view class="container slide"></div>
+    </div>
+
+
+  <div id="preloadedImages">
+        <!--  add images you'd like to preload here -->
+      <img class="preloadIMG" src = "assets/images/home.png"/>
+      <img class="preloadIMG" src="assets/images/slides/Slide_0017_3.0-Safety.png"/>
+      <img class="preloadIMG" src="assets/images/slides/Slide_0018_3.1-Adverse-Reactions.png"/>
+      <img class="preloadIMG" src="assets/images/slides/Slide_0019_3.2-Post-Marketing-Safety-Information.png"/>      
+                                 		
+  </div>
+      
+      
+<script src="js/jquery.min.js"></script>
+            <script src="js/iscroll.js"></script>
+<script src="js/angular.js"></script>
+<script src="js/angular-animate.js"></script>
+<script src="js/angular-ui-router.js"></script>
+<script src="js/ngStorage.js"></script>
+<script src="js/angular-touch.js"></script>
+<script src="js/hammer.js"></script>
+<script src="js/angular.hammer.js"></script>
+<script src="app/app.js"></script>
+<script src="app/app-config.js"></script>
+      <script src="app/viewTemplate/viewTemplate.js"></script>
+<script src="js/veeva-library-4.2.js"></script>      
+
+<script> 
+      $('#preloadedImages').html('');
+
+    $("html").on("touchstart", function() {
+        $("#scroll-for-more").hide();
+    });
+</script>       
+      
+  </body>
+</html>

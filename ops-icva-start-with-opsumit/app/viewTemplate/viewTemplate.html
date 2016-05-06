@@ -1,0 +1,31 @@
+<div class="hotspot_container" ng-repeat="hotspot in hotspots">
+    <a style="{{hotspot.style}}" ng-mobile-click="onTap(hotspot.tap, 'tap')" hm-swipeleft="loadKeyMessage(hotspot.swipeleft, 'efficacy_state')" hm-swiperight="onSwipe(hotspot.swiperight, 'swiperight')">&nbsp;</a><br/>
+</div>
+
+<img class="view_image" ng-src="{{backgroundImage}}"/>
+
+<div id="wrapper" hm-swipeleft="loadKeyMessage('gotoslide:ops-icva-efficacy.zip', 'efficacy_state')">
+	<div id="scroller">
+		<ul>
+			<li><img src="assets/images/ISI1.png" width="280" height="2601"/></li>
+		</ul>
+	</div>
+</div>  
+
+
+<script>
+            var myScroll;
+             myScroll = new iScroll('wrapper', { 
+                 bounce: true,
+				 hScroll: false,
+				 hScrollbar: false,
+                 vScrollbar: true,
+				 fixedScrollbar: false,
+				 hideScrollbar: false,                 
+                 scrollbarClass: 'myScrollbar' });
+            setTimeout(function () {
+					myScroll.refresh();
+            }, 200);  
+                
+                
+</script>    

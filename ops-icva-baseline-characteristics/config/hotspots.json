@@ -1,0 +1,122 @@
+{ "comment":"*******  These are shared navigation hotspots.  Add hotspots you would like to appear on every page here. To exclude a hotspot from a subview, catch and stop the hotspot event in the controller",
+  "navigation": [
+        {"tap":"gotoslide:ops-icva-pdf-prescribing-information.zip", "style":"background-color:blue; left:700px; margin-top:700px; width:100px; height:80px; z-index:400000;"},
+      {"tap":"gotoslide:ops-icva-scene-isi.zip", "style":"background-color:blue; left:800px; margin-top:700px; width:140px; height:80px; z-index:400000;"},
+      {"tap":"gotoslide:cva-home-index.zip,US-OPS-CVA-01", "style":"background-color:blue; left:940px; margin-top:700px; width:130px; height:80px; z-index:400000;"},
+      {"tap":"javascript:logoPressed", "style":"background-color:blue; left:716px; margin-top:-20px; width:305px; height:120px; z-index:400000;"}
+  ],
+
+  "states": [
+    { "comment":"hotspot nodes per state.  Enter a gesture event attribute to the hotspot ( can be any or all: swipeleft, swiperight, swipeup, swipedown, tap ) the value is the state you want the gesture to trigger on that hotspot", 
+      "state": "home", "hotspotColor":"background-color:green;",
+      "hotspots":[ 
+                     {"swipeleft":"gotoslide:ops-icva-safety.zip", "swiperight":"gotoslide:ops-icva-summary-of-events.zip","style":"left:0px; top:370px; width:40px; height:250px; z-index:100;"},         
+                    {"swipeleft":"gotoslide:ops-icva-safety.zip", "swiperight":"gotoslide:ops-icva-summary-of-events.zip","style":"left:0px; top:0px; width:725px; height:370px; z-index:100;"},
+                    {"swipeleft":"gotoslide:ops-icva-safety.zip", "swiperight":"gotoslide:ops-icva-summary-of-events.zip","style":"left:0px; top:620px; width:725px; height:147px; z-index:100;"},       
+          
+
+          {"tap":"viewTemplate.mono_combo", "style":"left:40px; top:370px; width:125px; height:250px; z-index:110;"},
+          {"tap":"viewTemplate.func_class", "style":"left:165px; top:370px; width:125px; height:250px; z-index:110;"},
+          {"tap":"viewTemplate.etiologies", "style":"left:290px; top:370px; width:120px; height:250px; z-index:110;"},
+          {"tap":"viewTemplate.age", "style":"left:410px; top:370px; width:105px; height:250px; z-index:110;"},
+          {"tap":"viewTemplate.sex", "style":"left:515px; top:370px; width:75px; height:250px; z-index:110;"},
+          {"tap":"viewTemplate.time", "style":"left:590px; top:370px; width:135px; height:250px; z-index:110;"},
+                    {"tap":"javascript:SayHello@Giant,Clint", "style":"left:170px; top:0px; width:100px; height:100px; z-index:150;"}
+                 ]
+    },
+    { "comment":"*********************             BEGIN viewTemplate.home  2015 ECS/ERS Guidelines         ***********************************",
+      "state": "viewTemplate.home", "hotspotColor":"background-color:yellow;",
+      "hotspots":[ 
+                     {"swipeleft":"gotoslide:ops-icva-safety.zip", "swiperight":"gotoslide:ops-icva-summary-of-events.zip","style":"left:0px; top:370px; width:40px; height:250px; z-index:100;"},         
+                    {"swipeleft":"gotoslide:ops-icva-safety.zip", "swiperight":"gotoslide:ops-icva-summary-of-events.zip","style":"left:0px; top:0px; width:725px; height:370px; z-index:100;"},
+                    {"swipeleft":"gotoslide:ops-icva-safety.zip", "swiperight":"gotoslide:ops-icva-summary-of-events.zip","style":"left:0px; top:620px; width:725px; height:147px; z-index:100;"},       
+          
+
+          {"tap":"viewTemplate.mono_combo", "style":"left:40px; top:370px; width:125px; height:250px; z-index:110;"},
+          {"tap":"viewTemplate.func_class", "style":"left:165px; top:370px; width:125px; height:250px; z-index:110;"},
+          {"tap":"viewTemplate.etiologies", "style":"left:290px; top:370px; width:120px; height:250px; z-index:110;"},
+          {"tap":"viewTemplate.age", "style":"left:410px; top:370px; width:105px; height:250px; z-index:110;"},
+          {"tap":"viewTemplate.sex", "style":"left:515px; top:370px; width:75px; height:250px; z-index:110;"},
+          {"tap":"viewTemplate.time", "style":"left:590px; top:370px; width:135px; height:250px; z-index:110;"},
+                    {"tap":"javascript:SayHello@Giant,Clint", "style":"left:170px; top:0px; width:100px; height:100px; z-index:150;"}   
+                 ]
+    },
+    { "comment":"*********************             BEGIN viewTemplate.adverse_reactions SECTION HOTSPOTS         ***********************************",
+      "state": "viewTemplate.zoom", "hotspotColor":"background-color:blue;",
+      "hotspots":[ 
+                     {"swipeleft":"gotoslide:ops-icva-safety.zip", "swiperight":"gotoslide:ops-icva-summary-of-events.zip","style":"left:0px; top:370px; width:40px; height:250px; z-index:100;"},         
+                    {"swipeleft":"gotoslide:ops-icva-safety.zip", "swiperight":"gotoslide:ops-icva-summary-of-events.zip","style":"left:0px; top:0px; width:725px; height:370px; z-index:100;"},
+                    {"swipeleft":"gotoslide:ops-icva-safety.zip", "swiperight":"gotoslide:ops-icva-summary-of-events.zip","style":"left:0px; top:620px; width:725px; height:147px; z-index:100;"},       
+          
+
+          {"tap":"viewTemplate.mono_combo", "style":"left:40px; top:370px; width:125px; height:250px; z-index:110;"},
+          {"tap":"viewTemplate.func_class", "style":"left:165px; top:370px; width:125px; height:250px; z-index:110;"},
+          {"tap":"viewTemplate.etiologies", "style":"left:290px; top:370px; width:120px; height:250px; z-index:110;"},
+          {"tap":"viewTemplate.age", "style":"left:410px; top:370px; width:105px; height:250px; z-index:110;"},
+          {"tap":"viewTemplate.sex", "style":"left:515px; top:370px; width:75px; height:250px; z-index:110;"},
+          {"tap":"viewTemplate.time", "style":"left:590px; top:370px; width:135px; height:250px; z-index:110;"},
+                    {"tap":"javascript:SayHello@Giant", "style":"left:170px; top:0px; width:100px; height:100px; z-index:150;"}
+                 ]
+    },
+    { "comment":"*********************             BEGIN viewTemplate.adverse_reactions SECTION HOTSPOTS         ***********************************",
+      "state": "viewTemplate.mono_combo", "hotspotColor":"background-color:green;",
+      "hotspots":[ 
+                {"swipeleft":"gotoslide:ops-icva-safety.zip", "swiperight":"gotoslide:ops-icva-summary-of-events.zip","style":"left:0px; top:0px; width:725px; height:767px; z-index:100;"},           
+                    {"tap":"viewTemplate.zoom", "style":"left:600px; top:340px; width:100px; height:60px; z-index:110;"},
+           {"tap":"viewTemplate.func_class", "style":"left:602px; top:400px; width:100px; height:220px; z-index:150;"}
+                 ]
+    },
+    { "comment":"*********************             BEGIN viewTemplate.adverse_reactions SECTION HOTSPOTS         ***********************************",
+      "state": "viewTemplate.func_class", "hotspotColor":"background-color:red;",
+      "hotspots":[ 
+                {"swipeleft":"gotoslide:ops-icva-safety.zip", "swiperight":"gotoslide:ops-icva-summary-of-events.zip","style":"left:0px; top:0px; width:725px; height:767px; z-index:100;"},         
+                    {"tap":"viewTemplate.zoom", "style":"left:600px; top:340px; width:105px; height:60px; z-index:110;"},
+           {"tap":"viewTemplate.mono_combo", "style":"left:38px; top:400px; width:100px; height:220px; z-index:150;"},
+           {"tap":"viewTemplate.etiologies", "style":"left:600px; top:400px; width:100px; height:220px; z-index:150;"}          
+                 ]
+    },
+    { "comment":"*********************             BEGIN viewTemplate.adverse_reactions SECTION HOTSPOTS         ***********************************",
+      "state": "viewTemplate.etiologies", "hotspotColor":"background-color:yellow;",
+      "hotspots":[ 
+                {"swipeleft":"gotoslide:ops-icva-safety.zip", "swiperight":"gotoslide:ops-icva-summary-of-events.zip","style":"left:0px; top:0px; width:725px; height:767px; z-index:100;"},          
+                    {"tap":"viewTemplate.zoom", "style":"left:600px; top:340px; width:105px; height:60px; z-index:110;"},
+           {"tap":"viewTemplate.func_class", "style":"left:38px; top:400px; width:100px; height:220px; z-index:150;"},
+           {"tap":"viewTemplate.age", "style":"left:600px; top:400px; width:105px; height:220px; z-index:150;"}          
+                 ]
+    },
+    { "comment":"*********************             BEGIN viewTemplate.adverse_reactions SECTION HOTSPOTS         ***********************************",
+      "state": "viewTemplate.age", "hotspotColor":"background-color:orange;",
+      "hotspots":[ 
+                {"swipeleft":"gotoslide:ops-icva-safety.zip", "swiperight":"gotoslide:ops-icva-summary-of-events.zip","style":"left:0px; top:0px; width:725px; height:767px; z-index:100;"},           
+                    {"tap":"viewTemplate.zoom", "style":"left:600px; top:340px; width:105px; height:60px; z-index:110;"},
+           {"tap":"viewTemplate.etiologies", "style":"left:38px; top:400px; width:100px; height:220px; z-index:150;"},
+           {"tap":"viewTemplate.sex", "style":"left:600px; top:400px; width:105px; height:220px; z-index:150;"}          
+                 ]
+    },
+    { "comment":"*********************             BEGIN viewTemplate.adverse_reactions SECTION HOTSPOTS         ***********************************",
+      "state": "viewTemplate.sex", "hotspotColor":"background-color:blue;",
+      "hotspots":[ 
+                {"swipeleft":"gotoslide:ops-icva-safety.zip", "swiperight":"gotoslide:ops-icva-summary-of-events.zip","style":"left:0px; top:0px; width:725px; height:767px; z-index:100;"},         
+                    {"tap":"viewTemplate.zoom", "style":"left:600px; top:340px; width:105px; height:60px; z-index:110;"},
+           {"tap":"viewTemplate.age", "style":"left:38px; top:400px; width:100px; height:220px; z-index:150;"},
+           {"tap":"viewTemplate.time", "style":"left:600px; top:400px; width:105px; height:220px; z-index:150;"}          
+                 ]
+    },
+    { "comment":"*********************             BEGIN viewTemplate.adverse_reactions SECTION HOTSPOTS         ***********************************",
+      "state": "viewTemplate.time", "hotspotColor":"background-color:green;",
+      "hotspots":[ 
+                {"swipeleft":"gotoslide:ops-icva-safety.zip", "swiperight":"gotoslide:ops-icva-summary-of-events.zip","style":"left:0px; top:0px; width:725px; height:767px; z-index:100;"},          
+                    {"tap":"viewTemplate.zoom", "style":"left:600px; top:340px; width:105px; height:60px; z-index:110;"},
+           {"tap":"viewTemplate.sex", "style":"left:38px; top:400px; width:105px; height:220px; z-index:150;"}       
+                 ]
+    }
+      
+      
+                       
+      
+  ] 
+
+}
+
+
+

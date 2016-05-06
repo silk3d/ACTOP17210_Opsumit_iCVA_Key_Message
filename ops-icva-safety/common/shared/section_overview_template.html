@@ -1,0 +1,13 @@
+<div class="hotspot_container" ng-repeat="hotspot in hotspots">
+    <a style="{{hotspot.style}}" ng-mobile-click="requestViewState(hotspot.target_state)">&nbsp;</a><br/>
+</div>
+<img class="view_image" ng-src="{{sectionOverviewImagePath}}" ng-mobile-click="navMenuClose()"/>
+
+<div id="nav_links_menu">
+    <img class="links_menu_button" src="assets/images/links-off.png" ng-show="!linksActive" ng-mobile-click="navMenuOpen()"/>
+    <img class="links_menu_button"  src="assets/images/links-on.png" ng-show="linksActive" ng-mobile-click="navMenuClose()"/>
+    <div id="linksDropdown" ng-show="linksActive">
+        <a href="http://www.yahoo.com"><img class="enrollment_btn" src="assets/images/dropdown_enrollment_btn.png"/></a>
+        <a href="http://www.google.com"><img class="business_btn" src="assets/images/dropdown_business_btn.png" /></a>
+    </div>
+</div>

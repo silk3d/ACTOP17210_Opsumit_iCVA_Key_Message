@@ -1,0 +1,25 @@
+<div class="hotspot_container" ng-repeat="hotspot in hotspots">
+    <a style="{{hotspot.style}}" ng-mobile-click="onTap(hotspot.tap, 'tap')" hm-tap="" hm-swiperight="onSwipe(hotspot.swiperight, 'swiperight')">&nbsp;</a><br/>
+</div>
+
+<img class="view_image" ng-src="{{backgroundImage}}"/>
+
+<div id="aside-isi-wrapper" ng-show="!fullisi_visible">
+	<div id="scroller">
+		<ul>
+			<li><img src="assets/images/ISI1.png" width="280" height="2601"/></li>
+		</ul>
+	</div>
+</div> 
+
+
+
+
+	
+<script>
+
+    $("html").on("touchstart", function() {
+        $("#isi_more_wide").hide();
+    });     
+
+</script>

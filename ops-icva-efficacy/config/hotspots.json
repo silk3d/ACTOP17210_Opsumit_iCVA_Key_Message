@@ -1,0 +1,123 @@
+{ "comment":"*******  These are shared navigation hotspots.  Add hotspots you would like to appear on every page here. To exclude a hotspot from a subview, catch and stop the hotspot event in the controller",
+  "navigation": [
+
+  ],
+
+  "states": [
+    { "comment":"hotspot nodes per state.  Enter a gesture event attribute to the hotspot ( can be any or all: swipeleft, swiperight, swipeup, swipedown, tap ) the value is the state you want the gesture to trigger on that hotspot", 
+      "state": "home", "hotspotColor":"background-color:green;",
+      "hotspots":[  
+                    {"tap":"viewTemplate.adverse_reactions", "style":"left:102px; top:730px; width:160px; height:40px; z-index:110;"},
+                    {"tap":"viewTemplate.post_marketing", "style":"left:405px; top:730px; width:200px; height:40px; z-index:110;"}
+                 ]
+    },
+    { "comment":"*********************             BEGIN viewTemplate.home  2015 ECS/ERS Guidelines         ***********************************",
+      "state": "viewTemplate.home", "hotspotColor":"background-color:green;",
+      "hotspots":[ 
+                    {"swiperight":"gotoslide:ops-icva-start-with-opsumit.zip", "swipeleft":"gotoslide:ops-icva-summary-of-events.zip", "swipeup":"none", "swipedown":"none", "style":"left:0px; top:0px; width:725px; height:768px; z-index:100;"},      
+      				{"tap":"viewTemplate.zoom", "style":"left:0px; top:570px; width:60px; height:70px; z-index:115;"},
+                    {"tap":"viewTemplate.without_opsumit", "style":"left:102px; top:731px; width:150px; height:36px; z-index:110;"},
+                    {"tap":"viewTemplate.mono_combo", "style":"left:260px; top:731px; width:70px; height:36px; z-index:110;"},
+                    {"tap":"viewTemplate.forest_plot", "style":"left:335px; top:731px; width:125px; height:36px; z-index:110;"},
+                    
+      {"tap":"gotoslide:ops-icva-pdf-prescribing-information.zip", "style":"left:690px; top:728px; width:110px; height:40px; z-index:110;"},
+      {"tap":"gotoslide:ops-icva-scene-isi.zip", "style":"background-color:blue; left:800px; top:728px; width:130px; height:40px; z-index:110;"},
+      {"tap":"gotoslide:cva-home-index.zip,US-OPS-CVA-01", "style":"left:930px; top:728px; width:94px; height:40px; z-index:110;"},
+      {"tap":"javascript:logoPressed", "style":"left:725px; top:0px; width:299px; height:120px; z-index:110;"}                              				
+
+                 ]
+    },
+    { "comment":"*********************             BEGIN viewTemplate.home  2015 ECS/ERS Guidelines         ***********************************",
+      "state": "viewTemplate.without_opsumit", "hotspotColor":"background-color:blue;",
+      "hotspots":[ 
+                    {"swiperight":"gotoslide:ops-icva-start-with-opsumit.zip", "swipeleft":"gotoslide:ops-icva-summary-of-events.zip", "swipeup":"none", "swipedown":"none", "style":"left:0px; top:0px; width:725px; height:768px; z-index:100;"},      
+
+                    {"tap":"viewTemplate.home", "style":"left:102px; top:731px; width:150px; height:36px; z-index:110;"},
+                    {"tap":"viewTemplate.mono_combo", "style":"left:260px; top:731px; width:70px; height:36px; z-index:110;"},
+                    {"tap":"viewTemplate.forest_plot", "style":"left:335px; top:731px; width:125px; height:36px; z-index:110;"},
+                    
+      {"tap":"gotoslide:ops-icva-pdf-prescribing-information.zip", "style":"left:680px; top:728px; width:120px; height:40px; z-index:110;"},
+      {"tap":"gotoslide:ops-icva-scene-isi.zip", "style":"left:800px; top:728px; width:140px; height:40px; z-index:110;"},
+      {"tap":"gotoslide:cva-home-index.zip,US-OPS-CVA-01", "style":"left:940px; top:728px; width:84px; height:40px; z-index:110;"},
+      {"tap":"javascript:logoPressed", "style":"left:725px; top:0px; width:300px; height:120px; z-index:110;"}                              				
+
+                 ]
+    },  
+    { "comment":"*********************             BEGIN viewTemplate.home  2015 ECS/ERS Guidelines         ***********************************",
+      "state": "viewTemplate.summary", "hotspotColor":"background-color:purple;",
+      "hotspots":[ 
+                    {"swiperight":"gotoslide:ops-icva-start-with-opsumit.zip", "swipeleft":"gotoslide:ops-icva-summary-of-events.zip", "swipeup":"none", "swipedown":"none", "style":"left:0px; top:0px; width:725px; height:768px; z-index:100;"},      
+
+                    {"tap":"viewTemplate.home", "style":"left:102px; top:730px; width:135px; height:36px; z-index:110;"},
+                    {"tap":"viewTemplate.without_opsumit", "style":"left:240px; top:730px; width:150px; height:36px; z-index:110;"},
+                    {"tap":"viewTemplate.mono_combo", "style":"left:391px; top:730px; width:80px; height:36px; z-index:110;"},
+                    {"tap":"viewTemplate.forest_plot", "style":"left:475px; top:730px; width:120px; height:36px; z-index:110;"},
+                    
+      {"tap":"gotoslide:ops-icva-pdf-prescribing-information.zip", "style":"left:680px; top:728px; width:120px; height:40px; z-index:110;"},
+      {"tap":"gotoslide:ops-icva-scene-isi.zip", "style":"left:800px; top:728px; width:130px; height:40px; z-index:110;"},
+      {"tap":"gotoslide:cva-home-index.zip,US-OPS-CVA-01", "style":"left:930px; top:728px; width:94px; height:40px; z-index:110;"},
+      {"tap":"javascript:logoPressed", "style":"left:725px; top:0px; width:299px; height:120px; z-index:110;"}                              				
+
+                 ]
+    }, 
+    
+    { "comment":"*********************             BEGIN viewTemplate.home  2015 ECS/ERS Guidelines         ***********************************",
+      "state": "viewTemplate.mono_combo", "hotspotColor":"background-color:yellow;",
+      "hotspots":[ 
+                    {"swiperight":"gotoslide:ops-icva-start-with-opsumit.zip", "swipeleft":"gotoslide:ops-icva-summary-of-events.zip", "swipeup":"none", "swipedown":"none", "style":"left:0px; top:0px; width:725px; height:768px; z-index:100;"},      
+
+                    {"tap":"viewTemplate.without_opsumit", "style":"left:102px; top:731px; width:150px; height:36px; z-index:110;"},
+                    {"tap":"viewTemplate.home", "style":"left:260px; top:731px; width:125px; height:36px; z-index:110;"},
+                    {"tap":"viewTemplate.forest_plot", "style":"left:395px; top:731px; width:125px; height:36px; z-index:110;"},
+                    
+      {"tap":"gotoslide:ops-icva-pdf-prescribing-information.zip", "style":"left:680px; top:727px; width:120px; height:40px; z-index:110;"},
+      {"tap":"gotoslide:ops-icva-scene-isi.zip", "style":"left:800px; top:727px; width:135px; height:40px; z-index:110;"},
+      {"tap":"gotoslide:cva-home-index.zip,US-OPS-CVA-01", "style":"left:935px; top:727px; width:87px; height:40px; z-index:110;"},
+      {"tap":"javascript:logoPressed", "style":"left:725px; top:0px; width:300px; height:120px; z-index:110;"}                              				
+
+                 ]
+    }, 
+    
+    { "comment":"*********************             BEGIN viewTemplate.home  2015 ECS/ERS Guidelines         ***********************************",
+      "state": "viewTemplate.forest_plot", "hotspotColor":"background-color:red;",
+      "hotspots":[ 
+                    {"swiperight":"gotoslide:ops-icva-start-with-opsumit.zip", "swipeleft":"gotoslide:ops-icva-summary-of-events.zip", "swipeup":"none", "swipedown":"none", "style":"left:0px; top:0px; width:725px; height:768px; z-index:100;"},      
+
+                    {"tap":"viewTemplate.without_opsumit", "style":"left:102px; top:731px; width:150px; height:36px; z-index:110;"},
+                    {"tap":"viewTemplate.mono_combo", "style":"left:260px; top:731px; width:70px; height:36px; z-index:110;"},
+                    {"tap":"viewTemplate.home", "style":"left:335px; top:731px; width:125px; height:36px; z-index:110;"},
+                    
+      {"tap":"gotoslide:ops-icva-pdf-prescribing-information.zip", "style":"left:680px; top:728px; width:120px; height:40px; z-index:110;"},
+      {"tap":"gotoslide:ops-icva-scene-isi.zip", "style":"left:800px; top:728px; width:140px; height:40px; z-index:110;"},
+      {"tap":"gotoslide:cva-home-index.zip,US-OPS-CVA-01", "style":"left:940px; top:728px; width:84px; height:40px; z-index:110;"},
+      {"tap":"javascript:logoPressed", "style":"left:725px; top:0px; width:299px; height:120px; z-index:110;"}                              				
+
+                 ]
+    },                  
+    
+    { "comment":"*********************             BEGIN viewTemplate.home  2015 ECS/ERS Guidelines         ***********************************",
+      "state": "viewTemplate.zoom", "hotspotColor":"background-color:green;",
+      "hotspots":[ 
+      {"swiperight":"gotoslide:ops-icva-start-with-opsumit.zip", "swipeleft":"gotoslide:ops-icva-summary-of-events.zip", "swipeup":"none", "swipedown":"none", "style":"eft:0px; top:0px; width:725px; height:768px; z-index:100;"},
+      {"tap":"viewTemplate.home", "style":"left:0px; top:600px; width:60px; height:70px; z-index:115;"},
+                    {"tap":"viewTemplate.without_opsumit", "style":"left:102px; top:731px; width:150px; height:36px; z-index:110;"},
+                    {"tap":"viewTemplate.mono_combo", "style":"left:260px; top:731px; width:70px; height:36px; z-index:110;"},
+                    {"tap":"viewTemplate.forest_plot", "style":"left:335px; top:731px; width:125px; height:36px; z-index:110;"},      
+      
+      {"tap":"gotoslide:ops-icva-pdf-prescribing-information.zip", "style":"left:680px; top:727px; width:110px; height:40px; z-index:110;"},
+      {"tap":"gotoslide:ops-icva-scene-isi.zip", "style":"background-color:blue; left:800px; top:727px; width:130px; height:40px; z-index:110;"},
+      {"tap":"gotoslide:cva-home-index.zip,US-OPS-CVA-01", "style":"left:940px; top:727px; width:82px; height:40px; z-index:110;"},
+      {"tap":"javascript:logoPressed", "style":"left:725px; top:0px; width:300px; height:120px; z-index:110;"}       
+      
+                 ]
+    }     
+      
+      
+           
+      
+  ] 
+
+}
+
+
+

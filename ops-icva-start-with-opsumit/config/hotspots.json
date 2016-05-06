@@ -1,0 +1,49 @@
+{ "comment":"*******  These are shared navigation hotspots.  Add hotspots you would like to appear on every page here. To exclude a hotspot from a subview, catch and stop the hotspot event in the controller",
+  "navigation": [
+        {"tap":"gotoslide:ops-icva-pdf-prescribing-information.zip", "style":"background-color:blue; left:660px; margin-top:700px; width:130px; height:80px; z-index:400000;"},
+      {"tap":"gotoslide:ops-icva-scene-isi.zip", "style":"background-color:blue; left:800px; margin-top:700px; width:130px; height:80px; z-index:400000;"},
+      {"tap":"gotoslide:cva-home-index.zip,US-OPS-CVA-01", "style":"background-color:blue; left:940px; margin-top:700px; width:130px; height:80px; z-index:400000;"},
+      {"swipeleft":"gotoslide:ops-icva-efficacy.zip", "style":"background-color:blue; left:0px; margin-top:25px; width:720px; height:680px; z-index:400000;"}
+  ],
+
+  "states": [
+    { "comment":"hotspot nodes per state.  Enter a gesture event attribute to the hotspot ( can be any or all: swipeleft, swiperight, swipeup, swipedown, tap ) the value is the state you want the gesture to trigger on that hotspot", 
+      "state": "home", "hotspotColor":"background-color:green;",
+      "hotspots":[  
+
+                 ]
+    },
+    { "comment":"*********************             BEGIN viewTemplate.home  2015 ECS/ERS Guidelines         ***********************************",
+      "state": "viewTemplate.home", "hotspotColor":"background-color:teal;",
+      "hotspots":[                     
+                    {"tap":"viewTemplate.ecs_guidelines", "style":"left:102px; top:730px; width:202px; height:40px; z-index:110;"},
+                    {"tap":"viewTemplate.nice_recommendations", "style":"left:308px; top:730px; width:230px; height:40px; z-index:110;"},
+          {"tap":"back", "style":"left:0px; top:725px; width:1px; height:1px; z-index:110;"}
+                 ]
+    },
+    { "comment":"*********************             BEGIN viewTemplate.nice_recommendations SECTION HOTSPOTS         ***********************************",
+      "state": "viewTemplate.nice_recommendations", "hotspotColor":"background-color:teal;",
+      "hotspots":[ 
+                   {"tap":"viewTemplate.ecs_guidelines", "style":"left:102px; top:730px; width:202px; height:40px; z-index:110;"},
+                    {"tap":"viewTemplate.home", "style":"left:308px; top:730px; width:230px; height:40px; z-index:110;"},
+                    {"tap":"viewTemplate.home", "style":"left:750px; top:0px; width:330px; height:120px; z-index:110;"}
+                 ]
+    }
+,
+    { "comment":"*********************             BEGIN viewTemplate.nice_recommendations SECTION HOTSPOTS         ***********************************",
+      "state": "viewTemplate.ecs_guidelines", "hotspotColor":"background-color:teal;",
+      "hotspots":[ 
+                    {"tap":"viewTemplate.home", "style":"left:102px; top:730px; width:202px; height:40px; z-index:110;"},
+                    {"tap":"viewTemplate.nice_recommendations", "style":"left:308px; top:730px; width:230px; height:40px; z-index:110;"},
+                    {"tap":"viewTemplate.home", "style":"left:750px; top:0px; width:330px; height:120px; z-index:110;"}
+                 ]
+    }      
+      
+           
+      
+  ] 
+
+}
+
+
+
