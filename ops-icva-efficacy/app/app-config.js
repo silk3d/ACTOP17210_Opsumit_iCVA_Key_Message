@@ -4,7 +4,8 @@ angular.module('TouchPanelPresenter.config', [])
     .constant('APP_VERSION','0.1')
     .constant('LOGGING_ENABLED',true)
     .constant("HOTSPOTS_OPACITY", "opacity:0.0;")
-    .constant("KEY_MESSAGE_ID", "ops-icva-safety.zip");
+    .constant("KEY_MESSAGE_STATE", "efficacy_state")
+    .constant("KEY_MESSAGE_ID", "ops-icva-efficacy.zip");
 
 
 /*******  The HOTSPOTS OPACITY sets the opacity of all application hotspots.                      **/

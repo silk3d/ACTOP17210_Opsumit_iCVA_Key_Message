@@ -162,11 +162,11 @@ img#app-background-image {
     padding: 0;
     margin: 0;
     
-    -webkit-animation: image-fade-in .3s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: image-fade-in .3s; /* Firefox < 16 */
-        -ms-animation: image-fade-in .3s; /* Internet Explorer */
-         -o-animation: image-fade-in .3s; /* Opera < 12.1 */
-            animation: image-fade-in .3s;     
+    -webkit-animation: image-fade-in 2.0s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: image-fade-in 2.0s; /* Firefox < 16 */
+        -ms-animation: image-fade-in 2.0s; /* Internet Explorer */
+         -o-animation: image-fade-in 2.0s; /* Opera < 12.1 */
+            animation: image-fade-in 2.0s;       
 }
 
 img#scroll-for-more {

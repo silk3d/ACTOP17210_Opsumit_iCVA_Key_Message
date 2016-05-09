@@ -1,10 +1,10 @@
 { "comment":"*******  These are shared navigation hotspots.  Add hotspots you would like to appear on every page here. To exclude a hotspot from a subview, catch and stop the hotspot event in the controller",
   "navigation": [
-              {"swipeleft":"gotoslide:ops-icva-summary.zip", "swiperight":"gotoslide:ops-icva-baseline-characteristics.zip","style":"background-color:blue; left:0px; margin-top:0px; width:725px; height:680px; z-index:400000;"},
-      {"tap":"gotoslide:ops-icva-pdf-prescribing-information.zip", "style":"background-color:blue; left:700px; margin-top:700px; width:90px; height:80px; z-index:400000;"},
+              
+      {"tap":"gotoslide:ops-icva-pdf-prescribing-information.zip", "style":"background-color:blue; left:700px; margin-top:700px; width:100px; height:80px; z-index:400000;"},
       {"tap":"gotoslide:ops-icva-scene-isi.zip", "style":"background-color:blue; left:800px; margin-top:700px; width:130px; height:80px; z-index:400000;"},
-      {"tap":"gotoslide:cva-home-index.zip,US-OPS-CVA-01", "style":"background-color:blue; left:940px; margin-top:700px; width:130px; height:80px; z-index:400000;"},
-      {"tap":"javascript:logoPressed", "style":"background-color:blue; left:730px; margin-top:-20px; width:300px; height:120px; z-index:400000;"}
+      {"tap":"gotoslide:cva-home-index.zip,US-OPS-CVA-01", "style":"background-color:blue; left:930px; margin-top:700px; width:94px; height:80px; z-index:400000;"},
+      {"tap":"javascript:logoPressed", "style":"background-color:blue; left:725px; margin-top:-20px; width:300px; height:120px; z-index:400000;"}
   ],
 
   "states": [
@@ -18,6 +18,7 @@
     { "comment":"*********************             BEGIN viewTemplate.home  2015 ECS/ERS Guidelines         ***********************************",
       "state": "viewTemplate.home", "hotspotColor":"background-color:green;",
       "hotspots":[ 
+{"swipeleft":"gotoslide:ops-icva-summary.zip", "swiperight":"gotoslide:ops-icva-baseline-characteristics.zip","style":"left:0px; top:0px; width:725px; height:768px; z-index:110;"},      
                     {"tap":"viewTemplate.isi", "style":"left:100px; top:730px; width:210px; height:40px; z-index:110;"},          
                     {"tap":"viewTemplate.adverse_reactions", "style":"left:315px; top:730px; width:140px; height:40px; z-index:110;"},
                     {"tap":"viewTemplate.post_marketing", "style":"left:460px; top:730px; width:210px; height:40px; z-index:110;"}
@@ -26,6 +27,7 @@
     { "comment":"*********************             BEGIN viewTemplate.adverse_reactions SECTION HOTSPOTS         ***********************************",
       "state": "viewTemplate.adverse_reactions", "hotspotColor":"background-color:teal;",
       "hotspots":[  
+					{"swipeleft":"gotoslide:ops-icva-summary.zip", "swiperight":"gotoslide:ops-icva-baseline-characteristics.zip","style":"left:0px; top:0px; width:725px; height:768px; z-index:110;"},        
                     {"tap":"viewTemplate.isi", "style":"left:100px; top:730px; width:210px; height:40px; z-index:110;"},     
                     {"tap":"viewTemplate.home", "style":"left:315px; top:730px; width:140px; height:40px; z-index:110;"},          
                     {"tap":"viewTemplate.post_marketing", "style":"left:460px; top:730px; width:210px; height:40px; z-index:110;"}
@@ -34,6 +36,7 @@
     { "comment":"*********************             BEGIN viewTemplate.adverse_reactions SECTION HOTSPOTS         ***********************************",
       "state": "viewTemplate.post_marketing", "hotspotColor":"background-color:blue;",
       "hotspots":[  
+					{"swipeleft":"gotoslide:ops-icva-summary.zip", "swiperight":"gotoslide:ops-icva-baseline-characteristics.zip","style":"left:0px; top:0px; width:725px; height:768px; z-index:110;"},         
                     {"tap":"viewTemplate.isi", "style":"left:100px; top:730px; width:210px; height:40px; z-index:110;"},          
                     {"tap":"viewTemplate.adverse_reactions", "style":"left:315px; top:730px; width:140px; height:40px; z-index:110;"},
                     {"tap":"viewTemplate.home", "style":"left:460px; top:730px; width:210px; height:40px; z-index:110;"}          
@@ -42,6 +45,8 @@
     { "comment":"*********************             BEGIN viewTemplate.isi SECTION HOTSPOTS         ***********************************",
       "state": "viewTemplate.isi", "hotspotColor":"background-color:green;",
       "hotspots":[  
+					{"swipeleft":"gotoslide:ops-icva-summary.zip", "swiperight":"gotoslide:ops-icva-baseline-characteristics.zip","style":"left:0px; top:0px; width:1024px; height:150px; z-index:110;"},        
+					{"swipeleft":"gotoslide:ops-icva-summary.zip", "swiperight":"gotoslide:ops-icva-baseline-characteristics.zip","style":"left:0px; top:700px; width:725px; height:68px; z-index:110;"},         
                     {"tap":"viewTemplate.home", "style":"left:100px; top:730px; width:210px; height:40px; z-index:110;"},          
                     {"tap":"viewTemplate.adverse_reactions", "style":"left:315px; top:730px; width:140px; height:40px; z-index:110;"},
                     {"tap":"viewTemplate.post_marketing", "style":"left:460px; top:730px; width:210px; height:40px; z-index:110;"}  
