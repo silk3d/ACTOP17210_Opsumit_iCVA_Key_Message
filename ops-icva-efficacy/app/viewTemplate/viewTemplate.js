@@ -433,7 +433,7 @@ angular.module('TouchPanelPresenter.viewTemplate', ['ui.router'])
                                     console.log("loaded viewTemplate.mono_combo page last key message was: " + $rootScope.lastKeyMessage);
                                     $("#isi-scroll-frame").hide();
 
-                                    $scope.backgroundImage = "assets/images/slides/Slide_0008_1.3.1-Mono-Combo-Therapy-Forest-Plot.jpg";
+                                    $scope.backgroundImage = "assets/images/slides/Slide_0008_1.3.1-Mono-Combo-Therapy-Forest-Plot.png";
                                     HotspotsManager.getAllHotspotsFromState($rootScope.currentState, true).then(function(newHotspots) {  
                                         $scope.hotspots = newHotspots; 
                                     });                                                                                                    

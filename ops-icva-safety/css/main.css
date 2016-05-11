@@ -151,7 +151,7 @@
 
 /*******************/
 
-img#app-background-image {
+img#app-background-image, img#app-background-image.fade-in-background {
     display: block;
     position: fixed;
     z-index: -100;
@@ -161,12 +161,16 @@ img#app-background-image {
     height:768px;
     padding: 0;
     margin: 0;
-    
-    -webkit-animation: image-fade-in 2.0s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: image-fade-in 2.0s; /* Firefox < 16 */
-        -ms-animation: image-fade-in 2.0s; /* Internet Explorer */
-         -o-animation: image-fade-in 2.0s; /* Opera < 12.1 */
-            animation: image-fade-in 2.0s;     
+    opacity:0;
+        
+}
+
+img#app-background-image.fade-in-background {
+    -webkit-animation: image-fade-in 2.0s forwards; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: image-fade-in 2.0s forwards; /* Firefox < 16 */
+        -ms-animation: image-fade-in 2.0s forwards; /* Internet Explorer */
+         -o-animation: image-fade-in 2.0s forwards; /* Opera < 12.1 */
+            animation: image-fade-in 2.0s forwards; 
 }
 
 img#scroll-for-more {

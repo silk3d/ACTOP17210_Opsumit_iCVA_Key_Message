@@ -112,11 +112,13 @@ button { outline: none;}
 *{user-select: none;-webkit-user-select: none;}
 
 // kill scrollbars
-body, html {height:100%; overflow: hidden;}
+body, html {
+    height:100%; 
+    overflow: hidden;
+}
 
 body {
     line-height: 1;
-background-color: #a9d9f8;
 }
 
 ol,

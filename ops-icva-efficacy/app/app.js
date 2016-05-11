@@ -184,8 +184,10 @@ angular.module('Messaging', [])
                         var slide = slideRequest.split(",")[0];
                         var prez = slideRequest.split(",")[1];
                         console.log("launching slide: " + slide + " in presentation: " + prez);
+                        window.top.location.href = "veeva:gotoSlide(" + slide + "," + prez + ")";
                         com.veeva.clm.gotoSlide(slide,prez);
                     } else {
+                    	window.top.location.href = "veeva:gotoSlide(" + slideRequest + ")";
                         com.veeva.clm.gotoSlide(slideRequest);
                         $log.debug("requesting slide: " + slideRequest);
                     }                                                            

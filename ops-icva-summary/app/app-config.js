@@ -4,6 +4,7 @@ angular.module('TouchPanelPresenter.config', [])
     .constant('APP_VERSION','0.1')
     .constant('LOGGING_ENABLED',true)
     .constant("HOTSPOTS_OPACITY", "opacity:0.0;")
+    .constant("KEY_MESSAGE_STATE", "summary_state")
     .constant("KEY_MESSAGE_ID", "ops-icva-safety.zip");
 
 

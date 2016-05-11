@@ -116,7 +116,6 @@ body, html {height:100%; overflow: hidden;}
 
 body {
     line-height: 1;
-    background-color: #a9d9f8; 
 }
 
 ol,
@@ -153,13 +152,7 @@ html {
     box-sizing: inherit;
 }
 
-body {
-    margin: 0px;
-    font-family: sans-serif;
-    color: #626769;
-    width: 1024px;
-    height: 768px;
-}
+
 
 h1,
 h2,
