@@ -367,6 +367,7 @@ angular.module('TouchPanelPresenter', [
                 // $log functions when $log is enabled in app-config.js
             });
             console.log("Application Version: " + APP_VERSION);
+            
 
         }
     ]

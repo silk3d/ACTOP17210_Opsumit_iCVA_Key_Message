@@ -52,6 +52,7 @@ angular.module('TouchPanelPresenter.viewTemplate', ['ui.router'])
                                     $scope.backgroundImage = "assets/images/slides/Slide_0003_1.0-Kaplan-Meir.png";
                                    
                                     
+                                    // true in getAllHotspotsFromState = include navigation hotspots from hotspots.json
                                     HotspotsManager.getAllHotspotsFromState($rootScope.currentState, true).then(function(newHotspots) {  
                                         $scope.hotspots = newHotspots; 
                                     });    
@@ -246,7 +247,6 @@ angular.module('TouchPanelPresenter.viewTemplate', ['ui.router'])
                                     }, 500);                                        
                                     
                                     
-                                     
                                 }
                             ]
                         }

@@ -1,48 +1,55 @@
 <!doctype html>
 <!-- Our uiRouterSample module defined here -->
-<html style="background-color:#d5eff8">
+<html style="background-color:#d5eff8; overflow:hidden">
   <head>
 
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,user-scalable=no" />
-
-
-<!-- styles for ng-animate are located here -->
-      <style>
+    <meta charset="utf-8">
+      <meta name="fragment" content="!">
+      <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0'>
+      <meta name="format-detection" content="telephone=no" />
+      <!-- Try to achieve full screen mode -->
+      <meta name="apple-mobile-web-app-capable" content="yes">
       
-
+<style>
+    iframe {
+        display:block; 
+        position:absolute; 
+        z-index:10; 
+        width:1024px; 
+        height:768px; 
+        margin:0; 
+        padding:0; 
+        top:0px; 
+        left: 0px;
+    }
       
-          iframe {
-              width: 1024px;
-              height:768px;
-              display: block;
-              position: fixed;
-              z-index: 10000;
-              left: 0px;
-              top: 0px;
-              margin: 0;
-              padding: 0;
-              
-              
-          }
+</style>
       
+      <script>
       
-      </style>
+            document.onload = function(){
+                document.ontouchmove = function(e){ e.preventDefault(); }
+            };      
       
-      
-
+      </script>
 
   </head>
   <body style="background-color:#d5eff8">
-      <script src="js/jquery.js"></script>      
-     <iframe id="content" frameBorder="0"></iframe>
+
 
 <script>
+            window.setTimeout(function(){                
+                var frame = document.createElement("iframe");
+                frame.setAttribute("id", "content");
+                frame.setAttribute("frameBorder", "0");
+                frame.setAttribute("width", "1024");
+                frame.setAttribute("height", "768");
+                frame.setAttribute("src", "content.html");
+                document.body.appendChild(frame);                           
+                
+                console.log("LOADING iFRAME and content!")
 
-    $( document ).ready(function() {
-                $("#content").attr("src", "content.html");
-    });
-    
+            }, 10);
     
 </script>
 

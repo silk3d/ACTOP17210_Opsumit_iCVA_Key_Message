@@ -24,28 +24,15 @@
                     {"tap":"viewTemplate.post_marketing", "style":"left:460px; top:730px; width:240px; height:40px; z-index:110;"}
                  ]
     },
-    { "comment":"*********************             BEGIN viewTemplate.adverse_reactions SECTION HOTSPOTS         ***********************************",
-      "state": "viewTemplate.adverse_reactions", "hotspotColor":"background-color:teal;",
-      "hotspots":[  
-                    {"tap":"viewTemplate.isi", "style":"left:100px; top:730px; width:210px; height:40px; z-index:110;"},          
-                    {"tap":"viewTemplate.post_marketing", "style":"left:460px; top:730px; width:240px; height:40px; z-index:110;"}
-                 ]
-    },
-    { "comment":"*********************             BEGIN viewTemplate.adverse_reactions SECTION HOTSPOTS         ***********************************",
-      "state": "viewTemplate.post_marketing", "hotspotColor":"background-color:blue;",
-      "hotspots":[  
-                    {"tap":"viewTemplate.isi", "style":"left:100px; top:730px; width:210px; height:40px; z-index:110;"},          
-                    {"tap":"viewTemplate.adverse_reactions", "style":"left:315px; top:730px; width:140px; height:40px; z-index:110;"}
-                 ]
-    },
     { "comment":"*********************             BEGIN viewTemplate.isi SECTION HOTSPOTS         ***********************************",
       "state": "viewTemplate.isi", "hotspotColor":"background-color:green;",
-      "hotspots":[  
-                    {"tap":"back", "style":"left:-5px; top:730px; width:5px; height:40px; z-index:110;"},
-          
-        {"tap":"gotoslide:ops-icva-pdf-prescribing-information.zip", "style":"background-color:blue; left:700px; margin-top:700px; width:90px; height:80px; z-index:400000;"},
+      "hotspots":[            
+        {"tap":"gotoslide:ops-icva-pdf-prescribing-information.zip", "style":"background-color:blue; left:700px; margin-top:700px; width:100px; height:80px; z-index:400000;"},
       {"tap":"gotoslide:ops-icva-scene-isi.zip", "style":"left:800px; top:700px; width:130px; height:80px; z-index:400000;"},
-      {"tap":"gotoslide:cva-home-index.zip,US-OPS-CVA-01", "style":"left:940px; top:700px; width:130px; height:80px; z-index:400000;"}    
+      {"tap":"gotoslide:cva-home-index.zip,US-OPS-CVA-01", "style":"left:930px; top:700px; width:94px; height:80px; z-index:400000;"},
+      {"swiperight":"back", "style":"left:0px; top:0px; width:716px; height:120px; z-index:400000;"},
+      {"swiperight":"back", "style":"left:0px; top:700px; width:700px; height:95px; z-index:400000;"},      
+		{"tap":"javascript:logoPressed", "style":"background-color:blue; left:716px; top:0px; width:305px; height:120px; z-index:400000;"}         
                  ]
     }      
       
